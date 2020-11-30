@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Truck Finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar is-danger is-fixed-top is-mobile" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand has-text-centered">
+            <a class="navbar-item" href="index.html">
+                <!-- Logo -->
+                <img src="images/FTF-Logo.png" alt="Food Truck Finder logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Header Image -->
+    <!-- Image src needs to change to "images/Header-Results.png" once food category is made -->
+    <img class="image is-fullwidth" id="headerPic" src="images/Header-Hunger.png" />
+
+    <!-- Search Container -->
+    <div class="box is-centered is-mobile" id="menu">
+
+        <!-- Question -->
+        <h1 class="is-mobile">What kind of food are you looking for?</h1>
+
+        <!-- Food Category Dropdown Box -->
+        <div class="select is-danger is-mobile" id="foodMenu">
+            <select>
+                <option>Select dropdown</option>
+                <option>American</option>
+                <option>BBQ</option>
+                <option>Brazilian</option>
+                <option>Chinese</option>
+                <option>Cuban</option>
+                <option>Deserts</option>
+                <option>Filipino</option>
+                <option>French</option>
+                <option>German</option>
+                <option>Greek</option>
+                <option>Indian</option>
+                <option>Japanese</option>
+                <option>Korean</option>
+                <option>Meditteranean</option>
+                <option>Mexican</option>
+                <option>Spanish</option>
+                <option>Tex-Mex</option>
+                <option>Vietnamese</option>
+                <option></option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Weather Container -->
+    <!-- Hide display of incorrect conditions -->
+    <div class="box is-centered is-mobile has-background-success" id="conditionGreen">
+        <div class="content is-medium">
+            <h3 class="has-text-centered "><strong class="has-text-white">Weather Conditions:</strong></h3>
+            <h4 class="has-text-centered has-text-white" id="weatherCondition">Stay and Dine</h4>
+        </div>
+    </div>
+
+    <div class="box is-centered is-mobile has-background-warning" id="conditionYellow">
+        <div class="content is-medium">
+            <h3 class="has-text-centered "><strong class="has-text-black">Weather Conditions:</strong></h3>
+            <h4 class="has-text-centered has-text-black" id="weatherCondition">Grab and Go</h4>
+        </div>
+    </div>
+
+    <div class="box is-centered is-mobile has-background-danger" id="conditionRed">
+        <div class="content is-medium">
+            <h3 class="has-text-centered "><strong class="has-text-white">Weather Conditions:</strong></h3>
+            <h4 class="has-text-centered has-text-white" id="weatherCondition">Proceed with Caution</h4>
+        </div>
+    </div>
+
+    <!-- Results Container -->
+    <div class="box has-text-centered is-mobile">
+
+        <!-- Result 1 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-1">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-1">Food Truck Name</p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay">Category</p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-1">8</span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-1">210-823-0745</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 2 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-2">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-2"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-2"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-2"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 3 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-3">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-3"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-3"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-3"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 4 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-4">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-4"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-4"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-4"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 5 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-5">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-5"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-5"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-5"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 6 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-6">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-6"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-6"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-6"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 7 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-7">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-7"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-7"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-7"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 8 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-8">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-8"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-8"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-8"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 9 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-9">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-9"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-9"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-9"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result 10 -->
+        <div class="card">
+
+            <div class="card-content">
+                <div class="media">
+
+                    <!-- Business Image -->
+                    <div class="media-left">
+                        <figure class="image is-120x120">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
+                                id="resultPic-10">
+                        </figure>
+                    </div>
+
+                    <!-- Business Name, Category, and Rating -->
+                    <div class="media-content">
+
+                        <!-- Title -->
+                        <p class="title is-4" id="resultName-10"></p>
+
+                        <!-- Category -->
+                        <p class="subtitle is-6" id="categoryDisplay"></p>
+
+                        <!-- Distance -->
+                        <p class="subtitle is-6">
+                            <span id="resultDistance-10"></span>
+                            miles away
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Business Phone Number Row -->
+                <div class="box has-text-centered is-mobile" id="contactInfo">
+
+                    <div>
+                        <p class="title is-12">
+                            Phone:
+                            <span id="resultPhone-10"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="googleAPI.js"></script>
+</body>
+
+</html>
