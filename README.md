@@ -40,4 +40,5 @@ Jose Garcia,
 Luis Vela
 
 LINK TO THE DEPLOYED PROJECT
+
 https://calebthecreative.github.io/Food-Truck-Finder/
