@@ -19,9 +19,9 @@ API USED
 
 For this application we decided to use two diffrent  APIs:
 
-GOOGLE MAPS API
+GOOGLE PLACES API
 
-https://cloud.google.com/maps-platform/
+https://developers.google.com/places/web-service/overview
 This api was used to pull the users location using their longitude and latitude and populates the results container based on the avaliable food trucks near the users location,
 
 OPEN WEATHER API
