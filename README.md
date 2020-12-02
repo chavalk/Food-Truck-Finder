@@ -31,9 +31,13 @@ This api was used to pull the weather conditions based on the users current loca
 
 CONTRIBUTORS
 
-Caleb Hopkins
-Ignacio A. Garcia Jr
-Jose Garcia
+Caleb Hopkins,
+
+Ignacio A. Garcia Jr,
+
+Jose Garcia,
+
 Luis Vela
 
 LINK TO THE DEPLOYED PROJECT
+https://calebthecreative.github.io/Food-Truck-Finder/
