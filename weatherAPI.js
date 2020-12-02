@@ -14,7 +14,7 @@ var weather = "";
 function getCity(){
 
     // URL for API to get city
-    var ipApi = "http://ip-api.com/json/";
+    var ipApi = "https://freegeoip.app/json/";
 
     // Call to API
     $.ajax({
