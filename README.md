@@ -29,6 +29,10 @@ OPEN WEATHER API
 https://openweathermap.org/api
 This api was used to pull the weather conditions based on the users current location, and makes suggestions on whether the user should stay and dine, or takout.  
 
+FUTURE DEVELOPMENT
+
+Our plans for future development of this project is to add the ability to give direction to a specific food truck from the application as well as the ability to display that food trucks schedule.
+
 CONTRIBUTORS
 
 Caleb Hopkins,
