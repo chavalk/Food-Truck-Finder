@@ -35,6 +35,7 @@ function searchResults(map) {
         }
         console.log(map[i].name);
         console.log(map[i].photos?.[0].html_attributions[0]);
+        //$("#resultPhone-"+i).text(result.formatted_phone_number);
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id="+map[i].place_id+"&fields=name,rating,formatted_phone_number&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM"
             ,
