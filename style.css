@@ -26,6 +26,26 @@
     font-family: 'Teko', sans-serif;
     font-size: 40px;
 }
+.button close{
+    font-family: 'Teko', sans-serif;
+    font-size: 25px; 
+}
+#launchGreen{
+    font-family: 'Teko', sans-serif;
+    font-size: 30px; 
+}
+#launchYellow{
+    font-family: 'Teko', sans-serif;
+    font-size: 30px; 
+}
+#launchRed{
+    font-family: 'Teko', sans-serif;
+    font-size: 30px; 
+}
+.modal-card-body{
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+}
 
 h1{
     font-family: 'Teko', sans-serif;
