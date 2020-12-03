@@ -2,11 +2,11 @@
 
 INTRODUCTION
 
-Our projects name is called " Food Truck Finder", as the foodies that we all are, we realized that the food truck sceen was not properly being represented among the food community, so we decided to make an application that list the food trucks near your location.
+Our projects name is called " Food Truck Finder", as the foodies that we all are, we realized that the food truck sceen was not properly being represented among the food community, so we decided to make an application that list the food trucks near the users location.
 
 HOW IT WORKS
 
-The application is simple to use, when the user first get to the page, it will great the user with an awsome pictue of a food truck  and a question asking what type of food the user is looking for followed by a drop down menu that lists all the avaliable categories. When the user selects the catagory desired, the appliciation will  then fetch all the avaliable options corresponding to their current location, in addition to this, we have included a section thats tells the user the weather conditions acording to their location and suggest if they should stay and dine in or pick up and go, or just avoid the area because of horible weather conditions.
+The application is simple to use, when the user first get to the page, it will great the user with an awsome pictue of a food truck  and an alert stating that the application wants to use their current location, followed by an option to block or allow the application to proceed. When the user selects allow , the appliciation will  then fetch all the avaliable results corresponding to their current location, in addition to this, we have included a section thats tells the user the weather conditions acording to their location and suggest if they should stay and dine in or pick up and go, or just avoid the area because of horible weather conditions.
 
 CSS FRAMEWORK USED
 
