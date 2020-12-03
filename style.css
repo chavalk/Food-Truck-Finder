@@ -7,7 +7,43 @@
     color: black;
 }
 
+.has-text-white{
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+}
+
+.has-text-black{
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+}
+
+.title{
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+}
+
+#weatherCondition{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+
 h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-0{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-0{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-0{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-0{
     font-family: 'Teko', sans-serif;
     font-size: 40px;
 }
@@ -15,13 +51,143 @@ h1{
     font-family: 'Teko', sans-serif;  
     font-size: 40px;
 }
-#categoryDisplay{
+#categoryDisplay-1{
     font-family: 'Teko', sans-serif;  
+    font-size: 27px;
 }
 #resultDistance-1{
     font-family: 'Teko', sans-serif;  
+    font-size: 25px;
 }
 #resultPhone-1{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-2{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-2{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-2{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-2{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-3{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-3{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-3{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-3{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-4{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-4{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-4{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-4{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-5{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-5{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-5{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-5{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-6{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-6{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-6{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-6{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-7{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-7{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-7{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-7{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-8{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-8{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-8{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-8{
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+#resultName-9{
+    font-family: 'Teko', sans-serif;  
+    font-size: 40px;
+}
+#categoryDisplay-9{
+    font-family: 'Teko', sans-serif;  
+    font-size: 27px;
+}
+#resultDistance-9{
+    font-family: 'Teko', sans-serif;  
+    font-size: 25px;
+}
+#resultPhone-9{
     font-family: 'Teko', sans-serif;
     font-size: 40px;
 }
