@@ -6,13 +6,14 @@ Our projects name is called " Food Truck Finder", as the foodies that we all are
 
 HOW IT WORKS
 
-The application is simple to use, when the user first get to the page, it will great the user with an awsome pictue of a food truck  and an alert stating that the application wants to use their current location, followed by an option to block or allow the application to proceed. When the user selects allow , the appliciation will  then fetch all the avaliable results corresponding to their current location, in addition to this, we have included a section thats tells the user the weather conditions acording to their location and suggest if they should stay and dine in or pick up and go, or just avoid the area because of horible weather conditions.
+The application is simple to use, when the user first visits the page, it will great the user with an awsome pictue of a food truck and a beautiful page layout. The application, in the background, will then get the users location, and then it will fetch all the avaliable  food truck results corresponding to ther users current location, in addition to this, we have included a section thats tells the user the weather conditions acording to their location and suggest if they should stay and dine in or pick up and go, or just avoid the area because of horible weather conditions.
 
 CSS FRAMEWORK USED
 
 For this project we decided to use Bulma css framework. Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.
 
 BULMA CSS FRAMEWORK
+
 https://bulma.io/
 
 API USED
@@ -32,6 +33,10 @@ This api was used to pull the weather conditions based on the users current loca
 FUTURE DEVELOPMENT
 
 Our plans for future development of this project is to add the ability to give direction to a specific food truck from the application as well as the ability to display that food trucks schedule.
+
+CHALLENGES FACED
+
+ finding APIs that worked on the client side not just the server side.
 
 CONTRIBUTORS
 
