@@ -1,3 +1,8 @@
+// Variables to get div IDs
+var conditionGreen = $("#conditionGreen");
+var conditionYellow = $("#conditionYellow");
+var conditionRed = $("#conditionRed");
+
 // Weather API key
 var apiKey = "391826fb0aefc3ce7776fffd2278448a";
 
@@ -9,14 +14,13 @@ var weather = "";
 function getCity(){
 
     // URL for API to get city
-    var ipApi = "http://ip-api.com/json/";
+    var ipApi = "https://freegeoip.app/json/";
 
     // Call to API
     $.ajax({
         url: ipApi,
         method: "GET"
     }).then(function(response){
-        console.log(response.city);
         city = response.city;
         getCurrentWeather(city);
     })
@@ -33,9 +37,14 @@ function getCurrentWeather(city){
         url: currentURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response);
-        console.log(response.weather[0].main);
         weather = response.weather[0].main;
+        if(weather == "Clear"){
+            conditionGreen.removeClass("is-hidden");
+        } else if(weather == "Rain"){
+            conditionYellow.removeClass("is-hidden");
+        } else{
+            conditionRed.removeClass("is-hidden");
+        }
     })
 }
 
