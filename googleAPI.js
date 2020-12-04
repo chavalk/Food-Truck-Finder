@@ -1,9 +1,3 @@
-
-
-//add a function to arrange the list of food trucks to the nearest one to the user. prepend style.
-
-
-
 //add function to get location and install it into the function.
 var apiKey = "AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM";
 var userPosition;
@@ -23,6 +17,10 @@ function showPosition(position) {
 }
 
 getLocation();
+
+$("").click(function(){
+    $(this).hide(200);
+    });
 
 function searchResults(map) {
     for (var i = 0; i < 10; i++) {
@@ -51,7 +49,7 @@ function searchResults(map) {
 }
 
 function googleApi() {
-    //remove https://cors-anywhere.herokuapp.com/ from the url in the query url
+    //remove https://cors-anywhere.herokuapp.com/ from the url in the query url when link is live
     var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=food+trucks&location="+userPosition.lat+","+userPosition.lon+"&radius=10000&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM";
     
     //api call
@@ -63,6 +61,7 @@ function googleApi() {
         console.log(response);
         let map;
         searchResults(response.results);
+        $(".resultCards").removeClass("is-hidden");
     });
 }
 
