@@ -50,3 +50,18 @@ function getCurrentWeather(city){
 
 // Function call
 getCity();
+
+// Add functionality to modal button
+$("#launchGreen").click(function() {
+    $(".modalGreen").addClass("is-active");
+  });
+$("#launchYellow").click(function() {
+    $(".modalYellow").addClass("is-active");
+  });
+$("#launchRed").click(function() {
+    $(".modalRed").addClass("is-active");
+  });
+// Add functionality to close buttons
+$(".close").click(function() {
+    $(".modal").removeClass("is-active");
+});
