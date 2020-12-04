@@ -24,7 +24,7 @@
 
     <!-- Header Image -->
     <!-- Image src needs to change to "images/Header-Results.png" once food category is made -->
-    <img class="image is-fullwidth" id="headerPic" src="Images/Header-Hunger.png" />
+    <img class="image mt-2 py-0" id="headerPic" src="Images/Header-Hunger.png" />
 
 
     <!-- Weather Container -->
@@ -59,7 +59,8 @@
 
             <!-- Modal Button -->
             <div class="has-text-centered">
-                <button class="button is-white is-centered is-large has-text-success" id="launchGreen">Stay and Dine</button>
+                <button class="button is-white is-centered is-large has-text-success" id="launchGreen">Stay and
+                    Dine</button>
             </div>
 
         </div>
@@ -77,14 +78,14 @@
                 <div class="modal-background"></div>
                 <div class="modal-card">
                     <header class="modal-card-head has-background-warning">
-                        
+
                         <!-- Modal Title -->
                         <h1 class="modal-card-title has-text-centered has-text-black" id="weatherCodition">Grab and Go
                         </h1>
                         <button class="delete close" aria-label="close"></button>
                     </header>
                     <section class="modal-card-body">
-                        
+
                         <!-- Modal Content -->
                         <p>The weather for today calls for some precipitation. Best grab your food and enjoy it indoors!
                         </p>
@@ -97,7 +98,8 @@
 
             <!-- Modal Button -->
             <div class="has-text-centered">
-                <button class="button is-black is-centered is-large has-text-warning" id="launchYellow">Grab and Go</button>
+                <button class="button is-black is-centered is-large has-text-warning" id="launchYellow">Grab and
+                    Go</button>
             </div>
 
         </div>
@@ -131,7 +133,8 @@
             </div>
 
             <div class="has-text-centered">
-                <button class="button is-white is-centered is-large has-text-danger" id="launchRed">Proceed with Caution</button>
+                <button class="button is-white is-centered is-large has-text-danger" id="launchRed">Proceed with
+                    Caution</button>
             </div>
 
         </div>
@@ -141,370 +144,347 @@
     <!-- Results Container -->
     <div class="box has-text-centered is-mobile">
 
-        <!-- Result 1 -->
-        <div class="card resultCards is-hidden">
+        <!-- Row 1 (Results 1-5)-->
+        <div class="columns">
+            <div class="column">
 
-            <div class="card-content">
-                <div class="media">
+                <!-- Result 1 -->
+                <div class="card resultCards is-hidden">
+                    <div>
 
-                    <!-- Business Image -->
-                    <div class="media-left">
-                        <figure class="image is-120x120">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                id="resultPic-0">
-                        </figure>
-                    </div>
+                        <!-- Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-0">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
 
-                    <!-- Business Name, Category, and Rating -->
-                    <div class="media-content">
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-0"></p>
 
-                        <!-- Title -->
-                        <p class="title is-4" id="resultName-0"></p>
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-0"></p>
+                                </div>
+                            </div>
 
-                        <!-- Category -->
-                        <p class="subtitle is-6" id="categoryDisplay-0"></p>
-
-                        <!-- Address -->
-                        <p class="subtitle is-6" id="resultAddress-0"></p>
-
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-0">
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Displays if restaurant is open -->
-                <div class="box has-text-centered is-mobile" id="isOpen-0">
-                </div>
-
+            <div class="column">
 
                 <!-- Result 2 -->
                 <div class="card resultCards is-hidden">
+                    <div>
 
-                    <div class="card-content">
-                        <div class="media">
+                        <!-- Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-1">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
 
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-1">
-                                </figure>
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-1"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-1"></p>
+                                </div>
                             </div>
 
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-1">Food Truck Name</p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-1">Category</p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-1"></p>
-
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-1">
+                                <p class="content is-6"></p>
                             </div>
                         </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-1">
-                        </div>
-
                     </div>
                 </div>
+            </div>
+
+            <div class="column">
 
                 <!-- Result 3 -->
                 <div class="card resultCards is-hidden">
+                    <div>
 
-                    <div class="card-content">
-                        <div class="media">
+                        <!-- Business Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-2">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
 
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-2">
-                                </figure>
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-2"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-2"></p>
+                                </div>
                             </div>
 
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-2"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-2"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-2"></p>
-
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-2">
                             </div>
                         </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-2">
-                        </div>
-
                     </div>
                 </div>
+            </div>
+
+            <div class="column">
 
                 <!-- Result 4 -->
                 <div class="card resultCards is-hidden">
+                    <div>
 
-                    <div class="card-content">
-                        <div class="media">
+                        <!-- Business Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-3">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
 
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-3">
-                                </figure>
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-3"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-3"></p>
+                                </div>
                             </div>
 
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-3"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-3"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-3"></p>
-
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-3">
                             </div>
                         </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-3">
-                        </div>
-
                     </div>
                 </div>
+            </div>
+
+            <div class="column">
 
                 <!-- Result 5 -->
                 <div class="card resultCards is-hidden">
+                    <div>
 
-                    <div class="card-content">
-                        <div class="media">
+                        <!-- Business Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-4">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
 
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-4">
-                                </figure>
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-4"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-4"></p>
+                                </div>
                             </div>
 
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-4"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-4"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-4"></p>
-
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-4">
                             </div>
                         </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-4">
-                        </div>
-
                     </div>
                 </div>
-
-                <!-- Result 6 -->
-                <div class="card resultCards is-hidden">
-
-                    <div class="card-content">
-                        <div class="media">
-
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-5">
-                                </figure>
-                            </div>
-
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-5"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-5"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-5"></p>
-
-                            </div>
-                        </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-5">
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Result 7 -->
-                <div class="card resultCards is-hidden">
-
-                    <div class="card-content">
-                        <div class="media">
-
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-6">
-                                </figure>
-                            </div>
-
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-6"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-6"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-6"></p>
-
-                            </div>
-                        </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-6">
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Result 8 -->
-                <div class="card resultCards is-hidden">
-
-                    <div class="card-content">
-                        <div class="media">
-
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-7">
-                                </figure>
-                            </div>
-
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-7"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-7"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-7"></p>
-
-                            </div>
-                        </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-7">
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Result 9 -->
-                <div class="card resultCards is-hidden">
-
-                    <div class="card-content">
-                        <div class="media">
-
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-8">
-                                </figure>
-                            </div>
-
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-8"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-8"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-8"></p>
-
-                            </div>
-                        </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-8">
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Result 10 -->
-                <div class="card resultCards is-hidden">
-
-                    <div class="card-content">
-                        <div class="media">
-
-                            <!-- Business Image -->
-                            <div class="media-left">
-                                <figure class="image is-120x120">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"
-                                        id="resultPic-9">
-                                </figure>
-                            </div>
-
-                            <!-- Business Name, Category, and Rating -->
-                            <div class="media-content">
-
-                                <!-- Title -->
-                                <p class="title is-4" id="resultName-9"></p>
-
-                                <!-- Category -->
-                                <p class="subtitle is-6" id="categoryDisplay-9"></p>
-
-                                <!-- Address -->
-                                <p class="subtitle is-6" id="resultAddress-9"></p>
-
-                            </div>
-                        </div>
-
-                        <!-- Displays if restaurant is open -->
-                        <div class="box has-text-centered is-mobile" id="isOpen-">
-                        </div>
-
-                    </div>
-                </div>
-
-
-
             </div>
         </div>
 
+        <!-- Row 2 (Results 2-10) -->
+        <div class="columns">
+            <div class="column">
+
+                <!-- Result 6 -->
+                <div class="card resultCards is-hidden">
+                    <div>
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-5">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-5"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-5"></p>
+                                </div>
+                            </div>
+
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+
+                <!-- Result 7 -->
+                <div class="card resultCards is-hidden">
+                    <div>
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-6">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-6"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-6"></p>
+                                </div>
+                            </div>
+
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-6">
+                                <p class="content is-6"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+
+                <!-- Result 8 -->
+                <div class="card resultCards is-hidden">
+                    <div>
+
+                        <!-- Business Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-7">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-7"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-7"></p>
+                                </div>
+                            </div>
+
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+
+                <!-- Result 9 -->
+                <div class="card resultCards is-hidden">
+                    <div>
+
+                        <!-- Business Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-8">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-8"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-8"></p>
+                                </div>
+                            </div>
+
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+
+                <!-- Result 10 -->
+                <div class="card resultCards is-hidden">
+                    <div>
+
+                        <!-- Business Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image"
+                                    id="resultPic-9">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+
+                                    <!-- Business Name -->
+                                    <p class="title is-4" id="resultName-9"></p>
+
+                                    <!-- Business Address -->
+                                    <p class="subtitle is-6" id="resultAddress-9"></p>
+                                </div>
+                            </div>
+
+                            <!-- Open/Closed Display -->
+                            <div class="box has-text-centered is-mobile" id="isOpen-9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+
     <!-- JS References -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="googleAPI.js"></script>
