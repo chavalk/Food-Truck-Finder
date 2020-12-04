@@ -27,7 +27,7 @@ function searchResults(map) {
         $("#resultName-"+i).text(map[i].name);
         $("#categoryDisplay-"+i).text(map[i].types[0]);
         $(".resultCards").removeClass("is-hidden");
-        $("#resultDistance-"+i).text(map[i].formatted_address)
+        $("#resultAddress-"+i).text(map[i].formatted_address)
         if (map[i].photos?.[0].html_attributions[0]) {
             $("#resultPic-"+i).attr("src",'https://maps.googleapis.com/maps/api/place/photo?maxwidth=96&photoreference='+map[i].photos?.[0].photo_reference+'&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM');
         } else {
