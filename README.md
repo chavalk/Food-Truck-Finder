@@ -46,6 +46,12 @@ Our plans for future development of this project is to add the ability to give d
 
  finding APIs that worked on the client side not just the server side.
 
+## SCREENSHOTS
+
+![Home Display - Desktop](Images/desktop-home.png)
+![Home Display - Mobile](Images/mobile-home.png)
+![Modal Display](Images/mobile-modal.png)
+
 ## CONTRIBUTORS
 
 Caleb Hopkins,
