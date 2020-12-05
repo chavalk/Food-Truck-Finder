@@ -29,7 +29,7 @@ function searchResults(map) {
         $(".resultCards").removeClass("is-hidden");
         $("#resultAddress-"+i).text(map[i].formatted_address)
         if (map[i].photos?.[0].html_attributions[0]) {
-            $("#resultPic-"+i).attr("src",'https://maps.googleapis.com/maps/api/place/photo?maxwidth=96&photoreference='+map[i].photos?.[0].photo_reference+'&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM');
+            $("#resultPic-"+i).attr("src",'https://maps.googleapis.com/maps/api/place/photo?maxwidth=320&photoreference='+map[i].photos?.[0].photo_reference+'&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM');
         } else {
             $("#resultPic-"+i).attr("src","https://bulma.io/images/placeholders/96x96.png");
         }
