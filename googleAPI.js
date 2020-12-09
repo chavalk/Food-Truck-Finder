@@ -23,7 +23,7 @@ $("").click(function(){
     });
 
 function searchResults(map) {
-    for (var i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
         $("#resultName-"+i).text(map[i].name);
         $("#categoryDisplay-"+i).text(map[i].types[0]);
         $(".resultCards").removeClass("is-hidden");
@@ -42,6 +42,9 @@ function searchResults(map) {
             method: "GET"
         }).then(function(response) {
             console.log(response);
+            // console.log(response.result?.formatted_phone_number); 
+            console.log(i)
+            $("#isOpen-"+i).text(response.result?.formatted_phone_number);
         })
     };
     
