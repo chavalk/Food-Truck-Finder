@@ -31,6 +31,7 @@ https://chavalk.github.io/Food-Truck-Finder/
 * CSS3
 * JavaScript
 * jQuery
+* GitHub Pages
 
 ## Where users can get help with your project
 
