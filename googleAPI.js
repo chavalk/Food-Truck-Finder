@@ -1,4 +1,4 @@
-//add function to get location and install it into the function.
+//Add function to get location and install it into the function.
 var apiKey = "AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM";
 var userPosition;
 
@@ -49,10 +49,10 @@ function searchResults(map) {
 }
 
 function googleApi() {
-    //remove https://cors-anywhere.herokuapp.com/ from the url in the query url when link is live
+    //Remove https://cors-anywhere.herokuapp.com/ from the url in the query url when link is live
     var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=food+trucks&location="+userPosition.lat+","+userPosition.lon+"&radius=10000&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM";
     
-    //api call
+    //API call
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -64,8 +64,3 @@ function googleApi() {
         $(".resultCards").removeClass("is-hidden");
     });
 }
-
-
-
-
-//limit to 10 results

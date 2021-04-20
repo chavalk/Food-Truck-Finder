@@ -1,67 +1,59 @@
-# FoodTruckFinder
+# Food-Truck-Finder
 
-## INTRODUCTION
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Our projects name is called " Food Truck Finder", as the foodies that we all are, we realized that the food truck scene was not properly being represented among the food community, so we decided to make an application that list the food trucks near the users location.
+## Description
 
-## HOW IT WORKS
+An application designed to allow users to easily search for nearby food trucks using the current location.
 
-The application is simple to use, when the user first visits the page, it will great the user with an awsome pictue of a food truck and a beautiful page layout. The application, in the background, will then get the users location, and then it will fetch all the avaliable  food truck results corresponding to ther users current location, in addition to this, we have included a section thats tells the user the weather conditions acording to their location and suggest if they should stay and dine in or pick up and go, or just avoid the area because of horible weather conditions.
+## What the project does
 
-## User Story
+The project allows users to find nearby food trucks using the current location. When users navigate to the website, it'll ask for permission to use the current location and upon approval from the user, the application will return ten options for nearby food trucks. Below is a screenshot of the landing page.
 
-```
-AS A person who wants enjoys food trucks
-I WANT to be able to see information about food trucks that are in the area and the weather conditions
-SO THAT I can make an informed decision on where to go to eat and whether to dine there or not.
-```
+![Food-Truck-Finder](Images/desktop-home.png)
 
-## CSS FRAMEWORK USED
+## Why is the project useful
 
-For this project we decided to use Bulma css framework. Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.
+The project is an easy way for users to find a food truck. When users are on the go, all they have to do is pull up their Food-Truck-Finder app, authrize it to use their location, and they'll have available food trucks in seconds.
 
-## BULMA CSS FRAMEWORK
+## How users can get started with the project
 
-https://bulma.io/
+Simply navigate to the deployed version listed below to interact with it.
 
-## API USED
+https://chavalk.github.io/Food-Truck-Finder/
 
-For this application we decided to use two diffrent  APIs:
+## What technologies were used with the project
 
-* GOOGLE PLACES API
+* Google Places API
+* Open Weather API
+* Bulma CSS Framework
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
 
-    https://developers.google.com/places/web-service/overview
-    This api was used to pull the users location using their longitude and latitude and populates the results container based on the avaliable food trucks near the users location,
+## Where users can get help with your project
 
-* OPEN WEATHER API
+This is the GitHub username for each of the contributors: CalebTheCreative, luismvela1, Agarc4777, and chavalk.
 
-    https://openweathermap.org/api
-    This api was used to pull the weather conditions based on the users current location, and makes suggestions on whether the user should stay and dine, or takout.  
+These are the links for our GitHub profiles:
 
-## FUTURE DEVELOPMENT
+https://github.com/CalebTheCreative
 
-Our plans for future development of this project is to add the ability to give direction to a specific food truck from the application as well as the ability to display that food trucks schedule.
+https://github.com/luismvela1
 
-## CHALLENGES FACED
+https://github.com/Agarc4777
 
- finding APIs that worked on the client side not just the server side.
+https://github.com/chavalk
 
-## SCREENSHOTS
+If you have any additional questions, feel free to reach any of us at:
 
-![Home Display - Desktop](Images/desktop-home.png)
-![Home Display - Mobile](Images/mobile-home.png)
-![Modal Display](Images/mobile-modal.png)
+calebhopkins@outlook.com
 
-## CONTRIBUTORS
+luismvela1@gmail.com
 
-Caleb Hopkins,
+chavalk@hotmail.com
 
-Ignacio A. Garcia Jr,
+## Who maintains and contributes to the project
 
-Jose Garcia,
-
-Luis Vela
-
-## LINK TO THE DEPLOYED PROJECT
-
-https://calebthecreative.github.io/Food-Truck-Finder/
+Currently I'm the only person maintaining and contributing to this forked repository of the project.
