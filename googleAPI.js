@@ -7,12 +7,12 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
 }
+
 function showPosition(position) {
     userPosition = {
         lat: position.coords.latitude,
         lon: position.coords.longitude,
     }
-    console.log(userPosition);
     googleApi()  
 }
 
@@ -37,8 +37,7 @@ function searchResults(map) {
         console.log(map[i].photos?.[0].html_attributions[0]);
         //$("#isOpen-"+i).text(map[i].result?.formatted_phone_number);
         $.ajax({
-            url: "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id="+map[i].place_id+"&fields=name,rating,formatted_phone_number&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM"
-            ,
+            url: "https://maps.googleapis.com/maps/api/place/details/json?place_id=" + map[i].place_id + "&fields=name,rating,formatted_phone_number&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM",
             method: "GET"
         }).then(function(response) {
             console.log(response);
@@ -50,7 +49,7 @@ function searchResults(map) {
 
 function googleApi() {
     //Remove https://cors-anywhere.herokuapp.com/ from the url in the query url when link is live
-    var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=food+trucks&location="+userPosition.lat+","+userPosition.lon+"&radius=10000&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM";
+    var queryURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=food+trucks&location=" + userPosition.lat + "," + userPosition.lon + "&radius=10000&key=AIzaSyBL-L9x6O3SIMHJkubbfPAPXsr_a1nx3EM";
     
     //API call
     $.ajax({
